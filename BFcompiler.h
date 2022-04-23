@@ -1,9 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main (int argc, char *argv[]);
 
+//FILE *GenerateCIntermediateFile(char *code);
+
+int recursive_loop_grammer_check(char *code);
+
+int grammer_check(char *code);
+
+void correct_usage();
 /*
-This whole compiler is purely based on the description of the laguage on it's Wikipedia at the time of coding. 
+This whole compiler is purely based on the description of the language on it's Wikipedia at the time of coding. 
 But here I will write the specifications (copied from wikipedia).
 ---------------------------------------------------------------------------------------
 
@@ -47,4 +55,11 @@ C specifications:
 
   ]   }
 ---------------------------------------------------------------------------------------
+
+To make a fully working compiler. We will first design a grammer for the language, 
+which should be very easy in for this language.
+
+Because of the nature of the language, there is a lot we don't need to do, 
+and we can simply check if the C translation will be acceptable by the C compiler.
+
 */
